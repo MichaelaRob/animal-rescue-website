@@ -1,3 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.banner {
+  background-color: #FA8383;
+  color: #fff;
+}
+
+footer {
+  background-color: #FA8383;
+  color: #fff;
+}
