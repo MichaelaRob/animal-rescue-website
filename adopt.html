@@ -12,28 +12,154 @@
 </head>
 <body>
   <ul class="skip-links">
-  <li><a href="#main">Jump to main content</a></li>
-  <li><a href="#nav">Jump to navigation</a></li>
-</ul>
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
 
-<header role="banner">
-  <div class="grid">
-    <div class="unit xs-1 s-1 m-1 l-1">
-      <h1 class="unit xs-1 s-1 m-1 l-1">Cotton Tail Rescue</h1>
+  <header role="banner">
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        <h1 class="tena pad-t-2 push-2 text-center unit xs-1 s-1 m-1 l-1">Cotton Tail Rescue</h1>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1">
+        <nav class="text-center" role="navigation" id="nav" tabindex="0">
+          <ul class="nav list-group-inline">
+            <li class="island"><a class="ib" href="index.html">Home</a></li>
+            <li class="gutter"><a class="ib" href="rescues.html">Rescues</a></li>
+            <li class="gutter"><a class="ib" href="adopt.html">Adopt</a></li>
+            <li class="gutter"><a class="ib" href="">Foster</a></li>
+            <li class="gutter"><a class="ib" href="">About Us</a></li>
+            <li class="gutter"><a class="ib" href="">Rabbit Care</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="unit">
-      <nav role="navigation" id="nav" tabindex="0">
-        <ul class="nav list-group-inline">
-          <li><a class="ib" href="index.html">Home</a></li>
-          <li><a class="ib" href="rescues.html">Rescues</a></li>
-          <li><a class="ib" href="adopt.html">Adopt</a></li>
-          <li><a class="ib" href="">Foster</a></li>
-          <li><a class="ib" href="">About Us</a></li>
-          <li><a class="ib" href="">Rabbit Care</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  </header>
+
+  <main role="main" id="main" tabindex="0">
+    <section>
+      <div class="banner relative">
+        <img class="img-flex" aria-details="#home-banner-image" src="images/.jpg" alt="">
+        <div class="pad-t-2 text-center banner-content">
+          <h2 class="push-half">Ready to Adopt?</h2>
+          <p class="max-length gutter">Ready to adopt your new friend? Read our instructions on rabbit care to ensure that you're ready to take care of your new friend. Apply below!</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="pad-t-2 push-2">
+      <form action="https://formspree.io/michaela.robinson178@gmail.com" method="POST">
+
+        <div class="gutter-2 grid">
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="name">First Name</label>
+            <input id="name" placeholder="Firstname">
+          </div>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="name">Last Name</label>
+            <input id="name" placeholder="Lastname">
+          </div>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="address">Address</label>
+            <input id="address" placeholder="123 Circle Ave">
+          </div>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="email">E-mail</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="select-a-rabbit">Select a Rabbit</label>
+            <select id="select-a-rabbit">
+              <option>Floppy</option>
+              <option>Hoppy</option>
+              <option>Fluffy</option>
+            </select>
+          </div>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="age">Age</label>
+            <input type="age" id="age" min="18" max="90" step="1">
+          </div>
+
+          <fieldset class="push unit gutter-1-8 s-1 m-1 l-1-2 push-1-2">
+            <legend>What household animals do you currently have?</legend>
+            <input id="cat" type="checkbox">
+            <label for="cat">Cat</label>
+
+            <input id="dog" type="checkbox">
+            <label for="dog">Dog</label>
+
+            <input id="rodent" type="checkbox">
+            <label for="rodent">Rodent</label>
+
+            <input id="other" type="checkbox">
+            <label for="other">Other</label>
+
+            <input id="none" type="checkbox">
+            <label for="none">None</label>
+          </fieldset>
+
+          <fieldset class="unit gutter-1-8 s-1 m-1 l-1-2">
+            <legend>Are you:</legend>
+            <input id="female" type="radio" name="gender">
+            <label for="female">Female</label>
+
+            <input id="male" type="radio" name="gender">
+            <label for="male">Male</label>
+
+            <input id="other" type="radio" name="gender">
+            <label for="other">Other</label>
+          </fieldset>
+
+          <fieldset class="unit s-1 m-1 l-1-2">
+            <legend>Where do you live?</legend>
+            <input id="country" type="radio" name="gender">
+            <label for="country">Country</label>
+
+            <input id="city" type="radio" name="gender">
+            <label for="city">City</label>
+
+            <input id="suburbs" type="radio" name="gender">
+            <label for="suburbs">Suburbs</label>
+          </fieldset>
+
+          <fieldset class="unit s-1 m-1 l-1-2">
+            <legend>Is everyone agreeable to adopting?</legend>
+            <input id="yes" type="radio" name="agreeable">
+            <label for="yes">Yes</label>
+
+            <input id="no" type="radio" name="agreeable">
+            <label for="no">No</label>
+          </fieldset>
+
+          <div class="unit push gutter-1-8 s-1 m-1-2">
+            <label class="" for="select-housing">Select a your type of housing</label>
+            <select id="select-housing">
+              <option>Single detached</option>
+              <option>Townhouse</option>
+              <option>Apartment</option>
+            </select>
+          </div>
+
+          <div class="unit push-2 s-1">
+            <label for="message">Tell us why you would like to adopt a rabbit.</label>
+            <textarea id="message"></textarea>
+          </div>
+
+          <div class="unit s-1 m-1-2 l-1-2 island-1-8 push-1-2">
+            <button class="button btn" type="submit">Submit Application</button>
+          </div>
+        </div>
+      </form>
+    </article>
+
+  </main>
+  <footer role="contentinfo">
+  </footer>
 </body>
 </html>
