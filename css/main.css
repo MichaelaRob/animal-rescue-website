@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-  background-color: #FA8383;
+  background-color: #FEB2A8;
   color: #fff;
 }
 
@@ -41,12 +41,14 @@ h3 {
   font-weight: 300;
 }
 
-.card-1 {
-  background-color: #A2A2A2;
-}
-
+.card-1,
 .card-2 {
   background-color: #C3C3C3;
+}
+
+.card-1:hover,
+.card-2:hover {
+  background-color: #FEB2A8;
 }
 
 .w-border {
