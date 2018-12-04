@@ -11,3 +11,8 @@ footer {
   background-color: #FA8383;
   color: #fff;
 }
+
+.nav a {
+  list-style-type: none;
+  text-decoration: none;
+}
