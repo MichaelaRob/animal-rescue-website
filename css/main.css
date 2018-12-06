@@ -67,3 +67,17 @@ h3 {
   border-color: #FEB2A8;
   color: #000;
 }
+
+.b-border {
+  border: solid 2px #707070;
+  background-color: #E0E0E0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+fieldset,
+legend {
+  border: none;
+}
