@@ -2,10 +2,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.banner {
-  background-color: #feb2a8;
+.banner-content {
   color: #000;
-  opacity: .9;
+}
+
+.banner {
+  background:
+  url("../images/banner-bunny.jpg") bottom center;
+  background-size: cover;
+}
+
+.pink-bg {
+  background-color: #feb2a8;
+  opacity: .8;
 }
 
 footer {
