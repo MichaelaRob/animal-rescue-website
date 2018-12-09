@@ -17,7 +17,6 @@ footer {
   list-style-type: none;
   text-decoration: none;
   color: #555555;
-  text-transform: uppercase;
 }
 
 .nav a:hover {
@@ -33,7 +32,6 @@ h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   font-weight: 300;
 }
 
