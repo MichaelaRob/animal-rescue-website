@@ -19,7 +19,7 @@ body {
 
 footer {
   background-color: #feb2a8;
-  color: #fff;
+  color: #000;
 }
 
 .nav a {
@@ -37,15 +37,6 @@ h1 {
   border: solid 2px #707070;
   border-right: none;
   border-left: none;
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 300;
-}
-
-h3 {
-  font-weight: 300;
 }
 
 .card-1,
