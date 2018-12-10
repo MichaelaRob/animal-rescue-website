@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .banner-content {
@@ -7,8 +7,7 @@ body {
 }
 
 .banner {
-  background:
-  url("../images/banner-bunny.jpg") bottom center;
+  background: url("../images/banner-bunny.jpg") bottom center;
   background-size: cover;
 }
 
