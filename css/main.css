@@ -32,8 +32,8 @@ footer {
 }
 
 h1 {
-  color: #000;
-  border: solid 2px #707070;
+  color: #fff;
+  background-color: #707070;
   border-right: none;
   border-left: none;
 }
