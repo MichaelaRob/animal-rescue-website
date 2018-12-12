@@ -342,6 +342,23 @@ svg.img-flex {
   clip-path: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.chop,
+.crop {
+  overflow: hidden;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .scrollable {
   max-width: 100%;
   overflow-x: auto;
@@ -381,6 +398,61 @@ svg.img-flex {
   /* stylelint-enable */
 }
 
+.center-content,
+.center-content-vertical,
+.center-contents,
+.center-contents-vertical {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-start,
+.center-content-vertical-start,
+.center-contents-start,
+.center-contents-vertical-start {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-horizontal,
+.center-contents-horizontal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: row wrap;
+  -ms-flex-direction: row wrap;
+  flex-flow: row wrap;
+}
+
 .inline {
   display: inline;
 }
@@ -416,6 +488,26 @@ svg.img-flex {
 [class*="pin-"],
 .absolute {
   position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.zindex-1000 {
+  z-index: 1000;
 }
 
 .pin-top-left,
@@ -502,6 +594,33 @@ svg.img-flex {
 
 .width-full, .w-1 {
   width: 100%;
+}
+
+.height-quarter, .h-1-4 {
+  height: 25%;
+}
+
+.height-half, .h-1-2 {
+  height: 50%;
+}
+
+.height-full, .h-1 {
+  height: 100%;
+}
+
+.height-win-quarter, .h-w-1-4 {
+  height: 25vh;
+  max-height: 46em;
+}
+
+.height-win-half, .h-w-1-2 {
+  height: 50vh;
+  max-height: 46em;
+}
+
+.height-win-full, .h-w-1 {
+  height: 100vh;
+  max-height: 46em;
 }
 
 ul {
@@ -1031,6 +1150,52 @@ a:focus, [tabindex="0"]:focus {
 [aria-disabled] {
   cursor: default;
 }
+
+.print-only {
+  display: none;
+  visibility: hidden;
+}
+
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.no-page-break-inside {
+  page-break-inside: avoid;
+}
+
+@media print {
+
+  /* stylelint-disable declaration-no-important */
+
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .print-only,
+  .force-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* stylelint-enable */
+
+  .visually-hidden.force-print {
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    width: auto;
+    border: 0;
+    clip: initial;
+    clip-path: none;
+  }
 
   /*
    * (c) Fabien Sa || MIT License

@@ -92,7 +92,6 @@
   flex-flow: column wrap;
 }
 
-
 .content-fill,
 .content-stretch {
   -ms-flex-grow: 2;
